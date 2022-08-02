@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.todo{
+    background-color: #353b48;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.todo_list{
+    width: 30%;
+    background-color: white;
+    height: 500px!important;
+    max-height: 500px!important;
+    padding: 0.8rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 0px rgba(82,77,77,0.75);
+    overflow: scroll;
+}
+
+.todo_list h1{
+    display: block;
+    background-color: #40739e;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.todo_list input{
+    width: 50%;
+    margin-right: 5px;
+    padding: 6px ;
+    border: 1px solid #353b48;
+    outline: none;
+}
+
+.todo_list button{
+    background-color: #487eb0;
+    color: black;
+    border: none;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    line-height: 35px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s ease;
+    position: relative;
+    z-index: 100;
+    top: 3px;
+}
+
+.todo_list button:hover{
+    background-color: green;
+}
+
+.list{
+    text-align: left;
+    width: 70%;
+    margin: 10px auto 0px auto;
+}
+
+li{
+    list-style: none;
+}
+
+.TodoList_delete{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 13px;
+
+}
+
+.TodoList_delete .fa{
+    background-color: red;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.TodoList_delete li{
+    font-size: 1.2rem;
+}
+
+.preview{
+    width: 62%;
+    margin:13px auto 0px auto;
+    text-align: left;
+}
+
+@media screen and (max-width:810px){
+    .todo_list{
+        width: 55%;
+        
+    }
+}
+
+@media screen and (max-width:500px){
+    .todo_list{
+        width: 85%;
+        
+    }
+
+    .TodoList_delete li{
+        font-size: 1rem;
+    }
+
+    .list{
+        width: 75%;
+    }
+}
